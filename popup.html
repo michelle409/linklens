@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <span class="logo">&#10022;</span>
+      <h1>LinkLens</h1>
+    </div>
+    <p class="subtitle">AI cold message generator</p>
+
+    <div id="not-linkedin" class="state hidden">
+      <p>Open a LinkedIn profile to generate a message.</p>
+    </div>
+
+    <div id="on-linkedin" class="state hidden">
+      <button id="generate-btn" class="btn-primary">
+        Generate Message
+      </button>
+
+      <div id="loading" class="hidden">
+        <div class="spinner"></div>
+        <p>Crafting your message...</p>
+      </div>
+
+      <div id="result" class="hidden">
+        <textarea id="message-box" rows="7"></textarea>
+        <div class="action-row">
+          <button id="copy-btn" class="btn-secondary">Copy</button>
+          <button id="regenerate-btn" class="btn-ghost">Regenerate</button>
+        </div>
+        <p id="copy-confirm" class="hidden">Copied!</p>
+
+        <div class="chat-section">
+          <p class="chat-label">Refine with AI</p>
+          <div id="chat-messages"></div>
+          <div class="chat-input-row">
+            <input type="text" id="chat-input" placeholder='e.g. I am applying for SWE intern role'/>
+            <button id="chat-send">Send</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
