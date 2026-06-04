@@ -73,14 +73,15 @@ git clone https://github.com/michelle409/linklens
 
 ## Project Structure
 
-linklens/
-├── manifest.json      # Extension config
-├── background.js      # API calls to Gemini
-├── content.js         # Runs on LinkedIn pages
-├── popup.html         # Extension UI
-├── popup.css          # Styling
-├── popup.js           # UI logic
-└── icons/             # Extension icons
+| File | Purpose |
+|------|---------|
+| `manifest.json` | Extension config and permissions |
+| `background.js` | Gemini Vision API calls |
+| `content.js` | Runs on LinkedIn pages |
+| `popup.html` | Extension UI |
+| `popup.css` | Styling |
+| `popup.js` | UI logic and event handling |
+| `icons/` | Extension icons |
 
 ---
 
